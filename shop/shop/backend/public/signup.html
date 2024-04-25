@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+
+/* login page */
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #008178;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #01625c;
+        }
+    </style>
+    <script>
+        const bar = document.getElementById('bar');
+const nav = document.getElementById('navbar');
+
+if(bar){
+    bar.addEventListener('click',()=>{
+        nav.classList.add('active')
+    })
+}
+
+const close = document.getElementById('close');
+
+if(close){
+    close.addEventListener('click',()=>{
+        nav.classList.remove('active')
+    })
+}
+
+    </script>
+</head>
+<body>
+   <section id="header">
+        <a href="#"><img src="img/img/logo.png" class="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a  class="active" href="index.html">Home</a></li>
+                <li><a  href="shop.html">Shop</a></li>
+                <li><a  href="Blog.html">Blog</a></li>
+                <li><a  href="about.html">About</a></li>
+                <li><a  href="contact.html">Contact</a></li>
+                <li><a  href="#"><span class="material-symbols-outlined">local_mall</span></a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="sign-in.html">Sign up</a></li>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="#"><span class="material-symbols-outlined">local_mall</span></a>
+            <a href="#"><span class="material-symbols-outlined">menu</span></a>
+        </div>
+   </section>
+
+   <!-- Login Page -->
+   <div class="container">
+    <h2>Signup</h2>
+    <form action="/sign_up" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <input type="submit" value="Submit">
+    </form>
+</div>
+   <!-- End Login Page -->
+
+   
+   <footer class="section-p1">
+    <div class="col">
+        <img class="logo" src="img/img/logo.png" alt="">
+        <h4>contact</h4>
+        <p><strong>Address: </strong>Lorem ipsum dolor sit Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+        <p><strong>Phone: </strong>Lorem ipsum dolor sit amet.</p>
+        <p><strong>Hours: </strong>Lorem ipsum dolor sit amet.</p>
+        <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+                <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Deliver Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & conditions</a>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <div class="col">
+        <h4>About</h4>
+        <a href="#">My Acoount</a>
+        <a href="#">View Cart</a>
+        <a href="#">My wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+
+    <div class="col install">
+        <h4>Install App</h4>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <div class="row">
+            <img src="img/img/app.jpg" alt="">
+            <img src="img/img/play.jpg" alt="">
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <img src="img/img/pay.png" alt="">
+    </div>
+    <div class="copyright">
+        <p>© Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit tene</p>
+    </div>
+</footer>
+</body>
+</html>
